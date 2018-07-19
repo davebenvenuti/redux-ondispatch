@@ -1,0 +1,29 @@
+{
+  "name": "redux-ondispatch",
+  "version": "1.0.0",
+  "description": "Redux Middleware that supports executing the function assigned to an action's onDispatch property when the action is dispatched",
+  "main": "dist/redux-ondispatch.js",
+  "repository": "https://github.com/davebenvenuti/redux-ondispatch",
+  "author": "Dave Benvenuti <davebenvenuti@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "redux": "^4.0.0",
+    "webpack": "^4.16.1",
+    "webpack-command": "^0.4.1"
+  },
+  "scripts": {
+    "build": "yarn run build:production",
+    "build:production": "webpack --mode production",
+    "build:development": "webpack --mode development"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "stage-0"
+    ]
+  }
+}
